@@ -10,7 +10,7 @@ interface Task {
 }
 
 export default function Todolist() {
-    const [tasks, setTasks] = useState<Task[]>([]);
+    const [tasks, setTasks] = useState<Task[]>([]); // eslint-disable-next-line @typescript-eslint/no-empty-object
     const [newTask, setNewTask] = useState<string>("");
     const [editingTaskId, setEditingTaskId] = useState<number | null>(null);
     const [editedTaskText, setEditedTaskText] = useState<string>("");
